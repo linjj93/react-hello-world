@@ -1,3 +1,3 @@
 # React Hello World
 
-Hello World in React
+👋🌏 Hello, world in React

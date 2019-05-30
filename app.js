@@ -1,4 +1,8 @@
-const element = <h1>👋 🌏 Hello, world in React with JSX!</h1>;
+function Welcome(props) {
+  return <h1>{props.message}</h1>;
+}
+
+const element = <Welcome message="👋 🌏 Hello, world in React with JSX!" />;
 
 const container = document.getElementById("app");
 

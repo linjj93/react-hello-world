@@ -64,11 +64,58 @@ First, we have to add the Babel library in our `index.html`
 
 Next, add `type="text/babel"` to our `<script>` tag where we want Babel to transpile
 
-```
+```js
 <script defer type="text/babel" src="app.js"></script>
+```
+
+### Create React elements in JSX
+
+To create a React element in JSX
+
+```js
+const element = <div>Some text here!</div>
+```
+
+### Embed expressions in JSX
+
+To embed JavaScript expressions within JSX
+
+```js
+const name = 'Bob'
+const element = <div>My name is {name}</div>
+```
+
+You can put any valid JavaScript expressions inside the curly braces in JSX. For example, `100 + 10`, `user.name`, `getName(user)` are all valid JavaScript expressions.
+
+### Specifying attributes in JSX
+
+You can specify attributes in JSX
+
+```js
+const image = <img src="path/to/user/avatar.png" />
+```
+
+or, with expressions
+
+```js
+const image = <img src={user.avatar} />
+```
+
+### Nesting children in JSX
+
+You can nest elements in JSX
+
+```js
+const element = (
+  <div>
+    <h1>Hello!</h1>
+    <h2>Good to see you here.</h2>
+  </div>
+);
 ```
 
 ## References
 
 - [`React.createElement()`](https://reactjs.org/docs/react-api.html#createelement)
 - [`ReactDOM.render()`](https://reactjs.org/docs/react-dom.html#render)
+- [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)

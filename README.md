@@ -2,6 +2,14 @@
 
 👋 🌏 Hello, world in React
 
+## Objectives
+
+In this exercise you will learn
+
+- to create React elements with `React.createElement()`
+- to create React elements with JSX syntax
+- to render React elements with `ReactDOM.render()`
+
 ## Instructions
 
 Create an `h1` tag with the content "Hello, world!" and append it to `<div id="app"></div>`.

@@ -8,6 +8,8 @@ In this exercise you will learn
 
 - to create React elements with `React.createElement()`
 - to create React elements with JSX syntax
+- to create React elements with function components
+- to create React elements with class components
 - to render React elements with `ReactDOM.render()`
 
 ## Instructions
@@ -18,7 +20,9 @@ First, let's do this in vanilla JavaScript by manipulating the DOM directly.
 
 Next, we will try to do the same thing in React by creating a React element with `React.createElement()` and using `ReactDOM.render()` to render it to the DOM.
 
-Finally, we will use JSX to create a React element.
+Next, we will use JSX to create a React element.
+
+Now let's create React elements with function components. Do the same thing for class components.
 
 ## React
 
@@ -114,8 +118,34 @@ const element = (
 );
 ```
 
+## React components
+
+Function components are regular functions that accepts props as a single argument and returns a React element.
+
+```js
+function Hello(props) {
+  return <h1>Hello, {props.name}!</h1>
+}
+```
+
+This is how you would call a function component and render it to the DOM
+
+```js
+const element = <Hello name="Sara" />;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
+
+Notice that we used a capital letter to name our component. This is because React treats components starting with lowercase letters as DOM tags.
+
+For example, `<div />` represents an HTML div tag, but <Welcome /> represents a component.
+
 ## References
 
 - [`React.createElement()`](https://reactjs.org/docs/react-api.html#createelement)
 - [`ReactDOM.render()`](https://reactjs.org/docs/react-dom.html#render)
 - [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Componenets and Props](https://reactjs.org/docs/components-and-props.html)

@@ -139,7 +139,19 @@ ReactDOM.render(
 );
 ```
 
-Notice that we used a capital letter to name our component. This is because React treats components starting with lowercase letters as DOM tags.
+We can also use `class` introduced in ES6 to create class components
+
+```js
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+```
+
+Note that class components extend from `React.Component` and include a `render()` method that returns a React element.
+
+Also notice that we capitalized our first letter when we defined our component. This is because React treats components starting with lowercase letters as DOM tags.
 
 For example, `<div />` represents an HTML div tag, but <Welcome /> represents a component.
 

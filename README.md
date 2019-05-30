@@ -8,7 +8,9 @@ Create an `h1` tag with the content "Hello, world!" and append it to `<div id="a
 
 First, let's do this in vanilla JavaScript by manipulating the DOM directly.
 
-Next, we will try to do the same thing in React.
+Next, we will try to do the same thing in React by creating a React element with `React.createElement()` and using `ReactDOM.render()` to render it to the DOM.
+
+Finally, we will use JSX to create a React element.
 
 ## React
 

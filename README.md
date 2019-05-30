@@ -38,6 +38,26 @@ You would use `React.createElement()` to create the React element.
 
 You could use `document.querySelector()` to select the container where you want to place your React element in.
 
+## JSX
+
+Each JSX element is just syntactic sugar for calling `React.createElement()`. This means that instead of creating a React element with `React.createElement()`, we can instead use JSX.
+
+We can see this in action [here](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA).
+
+In order to use JSX, we need to get Babel to help transpile our JavaScript files for us.
+
+First, we have to add the Babel library in our `index.html`
+
+```
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+
+Next, add `type="text/babel"` to our `<script>` tag where we want Babel to transpile
+
+```
+<script defer type="text/babel" src="app.js"></script>
+```
+
 ## References
 
 - [`React.createElement()`](https://reactjs.org/docs/react-api.html#createelement)

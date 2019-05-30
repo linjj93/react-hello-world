@@ -153,7 +153,7 @@ Note that class components extend from `React.Component` and include a `render()
 
 Also notice that we capitalized our first letter when we defined our component. This is because React treats components starting with lowercase letters as DOM tags.
 
-For example, `<div />` represents an HTML div tag, but <Welcome /> represents a component.
+For example, `<div />` represents an HTML div tag, but `<Welcome />` represents a component.
 
 ## References
 

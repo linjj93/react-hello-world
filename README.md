@@ -1,6 +1,14 @@
 # React Hello World
 
-👋🌏 Hello, world in React
+👋 🌏 Hello, world in React
+
+## Instructions
+
+Create an `h1` tag with the content "Hello, world!" and append it to `<div id="app"></div>`.
+
+First, let's do this in vanilla JavaScript by manipulating the DOM directly.
+
+Next, we will try to do the same thing in React.
 
 ## React
 

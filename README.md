@@ -8,8 +8,8 @@ In this exercise you will learn
 
 - to create React elements with `React.createElement()`
 - to create React elements with JSX syntax
-- to create React elements with function components
-- to create React elements with class components
+- to create React elements with function components and pass in props
+- to create React elements with class components and pass in props
 - to render React elements with `ReactDOM.render()`
 
 ## Instructions
@@ -118,15 +118,21 @@ const element = (
 );
 ```
 
-## React components
+## React components and props
 
-Function components are regular functions that accepts props as a single argument and returns a React element.
+Function components are regular functions that accepts `props` as a single argument and returns a React element.
 
 ```js
 function Hello(props) {
   return <h1>Hello, {props.name}!</h1>
 }
 ```
+
+Note that function components must only have one argument. React will not treat functions with multiple arguments as a component.
+
+When we define JSX attributes they are passed in to the component as a single object called `props`, which is short for properties.
+
+So `<Article author="Bob" content="My first article" />` will be available in the component as `props.author` and `props.content`.
 
 This is how you would call a function component and render it to the DOM
 
